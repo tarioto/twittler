@@ -10,18 +10,32 @@
   </head>
   <body>
 
-      <header class="primary-header">TwittLer</header>
+      <header class="primary-header">
+        <h1 class="headline">TwittLer</h1>
+      </header>
 
-      <section class="following">see timeline for </section>
-    <section class="filtering">filter latest tweets</section>
+
 
     <section class="new">
-      <button>Show latest tweets</button>
+
+    </section>
+    <section class="stage">
+      <section class="stage-left">
+        <button class="latest">Show latest tweets</button>
+        <section class="filtering">
+          <h2>filter latest tweets</h2>
+        </section>
+        <section class="following">
+          <h2>see timeline for</h2>
+        </section>
+
+      </section>
+
+      <section class="hero">
+        <ul class="tweets"></ul>
+      </section>
     </section>
 
-    <section class="hero">
-      <ul class="tweets"></ul>
-    </section>
 
     <script>
 
@@ -47,7 +61,7 @@
 
         findNewTweets()
 
-        $('.new').on('click', function() {
+        $('.latest').on('click', function() {
           findNewTweets();
         })
 

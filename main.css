@@ -53,8 +53,22 @@ table {
 
 body {
   font: 300 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: grey;
+  width: 1080px;
+  margin: 0 auto;
 }
 
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 5px;
+    margin-right: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
 
 /*
   Header
@@ -62,37 +76,78 @@ body {
 .primary-header {
   width: auto;
   height: 100px;
-  background-color: aqua;
-  color: black;
+  background-color: black;
+  color: white;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.headline {
+  padding: 39px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 
 /*
   content
 */
-.new {
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.latest {
+  width: 390px;
   text-align: center;
+  margin: 40px 50px 20px 50px;
+  padding: 15px 32px;
 }
 
 .filtering {
-  width: 50%;
-  float: left;
+  width: 350px;
+  height: auto;
+  margin: 20px 50px;
+  padding: 20px;
+  background: blue;
+  border-radius: 10px;
 }
 
 .following {
-  width: 50%;
+  width: 350px;
   height: auto;
-  float: left;
+  margin: 40px 50px;
+  padding: 20px;
+  background: yellow;
+  border-radius: 10px;
 }
 
-.hero {
-  width: auto;
+.stage {
+  width: 100%;
   height: auto;
+}
+
+.stage-left {
+  width: 460px;
+  float: left;
+}
+.hero {
+  width: 490px;
+  min-width: 200px;
+  height: auto;
+  padding: 20px;
+  margin-right: 50px;
+  margin-top: 40px;
+  float: right;
   text-align: center;
+  color: white;
+  background: green;
+  border-radius: 10px;
+
 }
 
 .hero div:nth-child(even) {
-  color: grey;
+  color: black;
   font-size: -1em;
 }
